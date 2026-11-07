@@ -246,4 +246,35 @@ html[data-theme="light"] .rangoli-card{background:radial-gradient(ellipse at 50%
 html[data-theme="light"] .menu{width:42px;height:42px;display:grid;place-items:center;border:1px solid #9b75a244;border-radius:12px;background:linear-gradient(145deg,#fff,#f2e9ff);color:#59366f;box-shadow:0 5px 16px #5a3a711c,inset 0 1px #fff;font-size:1.4rem}
 html[data-theme="light"] .menu:hover{color:#8a570e;border-color:#c69a4a;background:linear-gradient(145deg,#fffdf7,#ffefce);box-shadow:0 7px 20px #8b651e26,inset 0 1px #fff}
 html[data-theme="light"] .menu:focus-visible{outline:3px solid #b98223;outline-offset:3px}
+
+/* Soft glass finish: restrained reflections, calm spacing, and the existing Diwali palette. */
+:root{--glass:rgba(255,255,255,.085);--line:rgba(255,226,161,.22)}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;letter-spacing:-.012em}
+.nav{height:76px;background:linear-gradient(180deg,#211532dc,#160e25c9);backdrop-filter:blur(26px) saturate(145%);-webkit-backdrop-filter:blur(26px) saturate(145%);border-bottom:1px solid #ffe4a02b;box-shadow:0 10px 32px #05030c2e,inset 0 1px #fff2}
+.nav-inner{width:min(1240px,calc(100% - 48px))}.brand{letter-spacing:.13em}.nav-links{gap:clamp(13px,2vw,26px)}.nav-links a{transition:color .2s ease,opacity .2s ease}.nav-links a:hover{opacity:.86}
+.section{padding:clamp(78px,8vw,106px) 0}.section-title{letter-spacing:-.025em}.section-intro{line-height:1.82}
+.day-card,.trad-card,.inter-card,.quote-box,.form-panel,.story-copy{border:1px solid rgba(255,226,161,.18)!important;border-radius:24px!important;background:linear-gradient(145deg,rgba(255,255,255,.105),rgba(255,255,255,.045) 48%,rgba(136,91,184,.07))!important;box-shadow:0 18px 48px rgba(4,2,12,.26),inset 0 1px rgba(255,255,255,.15),inset 0 -1px rgba(255,219,139,.07)!important;backdrop-filter:blur(22px) saturate(135%);-webkit-backdrop-filter:blur(22px) saturate(135%)}
+.day-card,.trad-card,.inter-card{transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
+.day-card:hover,.trad-card:hover,.inter-card:hover{transform:translateY(-3px);border-color:#ffe39a65!important;box-shadow:0 23px 54px #05030c48,inset 0 1px #fff4!important}
+.story-copy{padding:22px 24px;border-radius:20px!important}.story-img,.photo{border-radius:22px;box-shadow:0 18px 42px #06030c38,inset 0 1px #ffffff25}.gallery-item{border:1px solid #ffe3a02a;border-radius:18px;box-shadow:0 13px 34px #05020d40;isolation:isolate}.gallery-item figcaption{background:linear-gradient(transparent,#100b24e8);backdrop-filter:blur(3px)}
+.quote-box{border-color:#ffe1a032!important;background:linear-gradient(145deg,#ffffff10,#ffffff04 55%,#8456a311)!important;box-shadow:0 22px 52px #05020d32,inset 0 1px #ffffff22,inset 0 0 50px #ffd66b08!important}
+.form-panel{border-radius:24px!important}.field input,.field textarea,.field select{border-radius:12px;transition:border-color .2s ease,box-shadow .2s ease}.field input:focus,.field textarea:focus,.field select:focus{box-shadow:0 0 0 3px #ffd66b20}
+.btn{border:1px solid #fff0b27a;background:linear-gradient(180deg,#fff0b3 0%,#ffd66b 48%,#f1b748 100%);box-shadow:0 10px 28px #05020d2a,inset 0 1px #ffffffcc,inset 0 -1px #a7682233;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}.btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px #05020d3d,inset 0 1px #ffffffd9}.btn.ghost{border-color:#ffffff2c;background:linear-gradient(145deg,#ffffff13,#ffffff06);box-shadow:inset 0 1px #ffffff30,0 8px 20px #05020d15;backdrop-filter:blur(14px)}
+.theme-toggle{border-color:#ffe2a044;background:linear-gradient(145deg,#ffffff18,#ffffff08);box-shadow:inset 0 1px #ffffff45,0 8px 22px #05020d22}
+.interactive-grid{gap:22px}.ritual-card{border-color:#ffe3a033!important;background:linear-gradient(145deg,#ffffff13,#ffffff06 46%,#b984de0c)!important;box-shadow:0 22px 54px #05020d3c,inset 0 1px #ffffff40,inset 0 -1px #ffdda50a!important}
+.invite-card:not(.exporting){border-radius:28px;box-shadow:0 28px 72px #02010975,inset 0 0 0 1px #ffffff20,inset 0 1px #ffffff65}
+.footer{border-top-color:#ffe1a02b}
+/* The light setting keeps its soft pearl surfaces and adds a faint lavender glass edge. */
+html[data-theme="light"] body{background-color:#fbf9ff}
+html[data-theme="light"] body:before{background:radial-gradient(ellipse at 9% 8%,#e9d9ff77,transparent 36%),radial-gradient(ellipse at 92% 22%,#ffe6b86e,transparent 35%),radial-gradient(ellipse at 52% 85%,#f3e6ff70,transparent 44%),linear-gradient(145deg,#fcfbff,#fffaf2 52%,#f8f5ff)}
+html[data-theme="light"] .nav{background:linear-gradient(180deg,#ffffffeb,#fffdf6d9);border-bottom-color:#9971a122;box-shadow:0 9px 32px #5b477016,inset 0 1px #fff}
+html[data-theme="light"] .day-card,html[data-theme="light"] .trad-card,html[data-theme="light"] .inter-card,html[data-theme="light"] .quote-box,html[data-theme="light"] .form-panel,html[data-theme="light"] .story-copy{border-color:#9e7db529!important;background:linear-gradient(145deg,#ffffffed,#ffffffb8 54%,#f3eaffc9)!important;box-shadow:0 18px 48px #4a315d12,inset 0 1px #ffffff,inset 0 -1px #b7894f0b!important;backdrop-filter:blur(20px) saturate(140%);-webkit-backdrop-filter:blur(20px) saturate(140%)}
+html[data-theme="light"] .day-card:hover,html[data-theme="light"] .trad-card:hover,html[data-theme="light"] .inter-card:hover{border-color:#b68a456b!important;box-shadow:0 23px 52px #50345c1b,inset 0 1px #ffffff!important}
+html[data-theme="light"] .gallery-item{border-color:#ffffff;border-radius:18px;box-shadow:0 14px 32px #4f3a631b,0 1px 3px #73572e26}
+html[data-theme="light"] .quote-box{background:linear-gradient(145deg,#ffffffed,#ffffffba 56%,#f6edff)!important;box-shadow:0 22px 52px #4a315d14,inset 0 1px #ffffff!important}
+html[data-theme="light"] .ritual-card{background:linear-gradient(145deg,#ffffffec,#fffaf1e6 55%,#f4edff)!important;box-shadow:0 22px 50px #59402b14,inset 0 1px #ffffff!important}
+html[data-theme="light"] .btn.ghost{border-color:#9c78ad38;background:linear-gradient(145deg,#ffffffed,#f8f2ffcc);box-shadow:0 8px 20px #4c345a10,inset 0 1px #fff}
+html[data-theme="light"] .invite-card:not(.exporting){box-shadow:0 28px 72px #4a315d20,inset 0 0 0 1px #ffffffb3,inset 0 1px #ffffff}
+@media(max-width:650px){.nav{height:66px}.nav-inner{width:calc(100% - 30px)}.section{padding:74px 0}.day-card,.trad-card,.inter-card,.quote-box,.form-panel{border-radius:20px!important}.story-copy{padding:19px!important}.interactive-grid{gap:16px}}
+@media(prefers-reduced-motion:reduce){.day-card,.trad-card,.inter-card,.btn,.nav-links a{transition:none!important}}
 </style></body></html>
